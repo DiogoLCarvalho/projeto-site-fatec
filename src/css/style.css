@@ -1,0 +1,540 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+/* Acessibilidade */
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-size: 1em;
+    margin: auto;
+}
+#atalhos{
+    list-style: none;
+    padding-left: 4%;
+}
+#atalhos li:first-child+li,#atalhos li:nth-child(2)+li,#atalhos li:nth-child(3)+li{
+    margin-left: 20px;
+}
+#atalhos li{
+    display: inline;
+}
+#atalhos li a{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+#atalhos li a:hover{
+    color: #e22e3d;
+}
+
+#pgacess{
+    padding-left: 20%;
+}
+
+.contraste,.fonte{
+    padding-left: 3%;
+}
+
+/* Página em si */
+#content >p.content__text-acess{
+    font-size: 16px;
+    text-align: justify;
+}
+#content >p.content__text-acess+p.content__text-acess,#content >p.content__text-acess:first-child{
+    margin-bottom: 10px;
+}
+#content >p.content__text-acess.destaque{
+    font-weight: bold;
+    font-size: 21px;
+    margin: 15px 0px 15px 0px;
+}
+#content >p.content__text-acess.small-destaque{
+    font-size: 16px;
+    font-style: italic;
+    margin: 15px 0px 15px 0px;
+}
+code{
+    font-family: Consolas,"courier new";
+    color: #e22e3d;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+}
+/* Fim acessibilidade */
+
+/* breadcrumb */
+#breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+    background-color: #A60A17;
+}
+#breadcrumb li{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+    color: #fff;
+    font-weight: bold;
+}
+
+#breadcrumb li:first-child:before{
+    content: '°\00a0';
+}
+#breadcrumb li+li::before{
+    content: '/\00a0';
+}
+
+#breadcrumb li a{
+    color: #f0f0f0;
+}
+
+/* fim breadcrumb */
+
+/* Audio e video */
+video{
+    display: block;
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+audio{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Fim audio e video */
+
+
+
+#main__content {
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#logo__fatec {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s ease-in-out;
+}
+#logo__fatec:hover{
+    transform: scale(1.05);
+}
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+}
+#sub__title{
+    margin-bottom: 20px;
+}
+#sub__title,
+.sub__title {
+    font-size: 40px;
+}
+
+#sub__title+ol>li {
+    font-size: 18px;
+}
+
+#sub__title+ol>li+li {
+    margin-top: 20px;
+}
+
+#content {
+    padding: 50px;
+}
+
+.content {
+    padding: 50px;
+}
+
+.content:first-child {
+    padding-bottom: 0px;
+}
+
+footer {
+    width: 100%;
+    background-color: #e22e3d;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.text__content {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#img__example {
+    width: 20%;
+    margin-top: 20px;
+}
+
+#content-left {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#content-right {
+    display: inline-block;
+}
+
+#img-medium {
+    width: 500px;
+    height: 50%;
+}
+
+#img-small{
+    width: 400px;
+    height: 50%;
+}
+
+.content > #title + .text__content + img{
+    width: 65%;
+}
+
+#content-center {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub__title+.text__content {
+    margin-bottom: 20px;
+}
+
+#validation {
+    position: absolute;
+    top: 65%;
+    left: 95%;
+    transform: translate(-65%, -95%);
+}
+
+
+/* Menu Site */
+nav{
+    width: 100%;
+    background: #e22e3d;
+    height: auto;
+}
+ul{
+    padding: 0;
+}
+#menu{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* menu escondido */
+#menu li ul{
+    width: 180px;
+    height: 63px;
+    position: absolute;
+    top: 48px;
+    left: 0; 
+    background-color: #e22e3d;
+    list-style: none;
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+}
+#menu li ul li{
+    margin-left: 0;
+    margin-top: 5px;
+}
+#menu li ul li:hover a{
+    color: black;
+}
+
+#menu li:hover ul{
+    display: block;
+}
+
+#menu .menu_item{
+    color: white;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+#menu .menu_item{
+    padding: 15px;
+}
+
+
+li p{
+    position: relative;
+    top: 0px;
+}
+
+#menu .menu_item a{
+    position: relative;
+    top: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all .5s ease-in-out;
+}
+#menu .menu_item:hover{
+    background-color: #A60A17;
+}
+
+#menu li+li{
+    margin-left: 20px;
+}
+
+.content__link{
+    text-decoration: none;
+}
+.content__link:hover{
+    text-decoration: underline ;
+}
+
+
+
+/* FORM */
+form{
+    font-size: 20px;
+}
+
+fieldset{
+    width: 40vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 3px solid #A60A17;
+    box-shadow: 1px 2px 5px #00000070;
+}
+
+fieldset + fieldset{
+    margin-top: 25px;
+}
+
+legend{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input,textarea{
+    outline-color: #e22e3d;
+}
+input,select{
+    width: 100%;
+    font-family: monospace;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1.8px solid black;
+    border-radius: 5px;
+}
+select{
+    font-size: 16px;
+    height: max-content;
+    padding: 18px 19px;
+    border: none;
+    color: white;
+    background-color: #e22e3d; 
+    border: 1px solid black;
+}
+
+select option:disabled{
+    color: black;
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    height: 20%;
+    padding: 15px;
+    font-family: monospace;
+}
+
+
+label{
+    letter-spacing: 2.5px;
+}
+
+/* Required class label */
+label.required{
+    font-weight: bold;
+}
+
+label.required::after{
+    content: " *";
+    color: #e22e3d;
+}   
+
+/* botões */
+#botons{
+    width: 20vw;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#send,#clear{
+    width: 120px;
+    height: 50px;
+    background-color: #e22e3d;
+    color: white;
+    border-radius:5px;
+    cursor: pointer;
+    border: 2px solid rgb(78, 76, 76);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#send{
+    margin-right: 20px;
+}
+
+#send:hover,#clear:hover{
+    background-color: rgb(194, 37, 50);
+}
+
+#send:focus,#clear:focus{
+    border: 2px solid #e22e3d;
+}
+.social{
+    text-decoration: none;
+    color: black;
+}
+.social:hover{
+    text-decoration: underline;
+}
+
+/* Menu responsivo */
+label[for="bt_menu"],#bt_menu{
+    display: none;
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 1550px){
+    #atalhos{
+        text-align: center;
+    }
+    #pgacess{
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #atalhos{
+        padding-left: 0;
+    }
+    .contraste, .fonte{
+        padding-left: .5%;
+    }
+}
+
+@media only screen and (max-width: 1030px){
+    #atalhos li:first-child, #atalhos li:nth-child(2), #atalhos li:nth-child(3){
+        display: none;
+    }
+    #atalhos li + li{
+        margin-right: 1.5%;
+    }
+}
+
+@media only screen and (max-width: 1030px){
+    #atalhos li + li{
+        margin-right: 0;
+    }
+    #content-center{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #content-left{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 790px){
+    #menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        text-align: center;
+        padding: 10px 0px ;
+        width: 100%;
+        background-color: #e22e3d;
+        display: block;
+        float: left;
+    }
+
+    #bt_menu:checked ~ #menu{
+        display: block;
+    }
+    #menu li{
+        background: #e22e3d;
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    #menu .menu_item{
+        margin: 0;
+    }
+    li p {
+        left: 10px;
+    }
+    #menu li ul{
+        background: #e22e3d;
+        height: auto;
+    }
+    #menu li ul{
+        position: static;
+        width: 100%;
+    }
+    #menu li ul li{
+        position: relative;
+        width: 100%;
+        float: left;
+        display: block;
+        background-color: #A60A17;
+    }
+    #logo__fatec{
+        width: 180px;
+    }
+    #title,#sub__title,.sub__title,#rodape p,.social{
+        font-size: 100%;        
+    }
+    #validation{
+        top: 92%;
+        left: 52%;
+    }
+    video,audio{
+        width: 100%;
+    }
+    .content > #title + .text__content + img,#img-small,#img__example, .text__content + img,#img-medium,fieldset,#botons,.sub__title+.text__content{
+        width: 100%;
+    }
+    .social{
+        display: inline-block;
+    }
+    #send,#content-left,#atalhos li:nth-child(3)+li {
+        margin: 0;
+    }
+
+}
