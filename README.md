@@ -1,4 +1,4 @@
-# Site Fatec Zona Leste
+# :star2: Fatec Zona Leste :star2:
 
 <p align='center'>
 
