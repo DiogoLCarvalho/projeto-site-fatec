@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- METADADOS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instruções sobre metadados, comentários, listas e layout em HTML">
+    <meta name="keywords" content="HTML, comentários, metadados, Lista não ordenada, Lista ordenada, layout">
+    <meta name="author" content="Diogo Lima Carvalho">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="shortcut icon" href="src/imagem/cps.ico" type="image/x-icon">
+
+    <!-- Título do site -->
+    <title>Aula 11 - HTML</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de acessibilidade, no topo -->
+        <!-- div#acessibilidade>ul>li>a#main__content{Ir para o conteúdo da página}[href="#" acesskey=1 title="Ir para o conteúdo da página"] -->
+        <!-- accesskey = alt+"numero" = atalho no teclado-->
+
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li>
+                    <a href="#main__content" accesskey="1" title="Ir para o conteúdo da página">Ir para o conteúdo
+                        da página [1]</a>
+                </li>
+
+                <li>
+                    <a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a>
+                </li>
+
+                <li>
+                    <a href="#rodape" accesskey="3" title="Ir para o rodapé da página">Ir para o rodapé da página
+                        [3]</a>
+                </li>
+
+                <li id="pgacess">
+                    <a href="#">Acessibilidade</a>
+                </li>
+
+                <li class="contraste">
+                    <a href="javascript:void(0);" id="contraste">Contraste</a>
+                <li>
+
+                <li class="contraste">
+                    <a href="javascript:void(0);" id="sem-contraste">Sem Contraste</a>
+                </li>
+
+                <li class="fonte">
+                    <a href="javascript:void(0);" id="aumentar">A +</a>
+                </li>
+
+                <li class="fonte">
+                    <a href="javascript:void(0);" id="diminuir">A -</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <!-- logo da página -->
+        <a href="../index.html" title="Ir para a página principal">
+            <img src="../src/imagem/FATEC_ZONA_LESTE.png" alt="Logo da FATEC zona leste nas cores cinza e vermelho"
+                id="logo__fatec">
+        </a>
+
+
+        <!-- Menu de navegação -->
+        <nav>
+            <label for="bt_menu"><img src="../src/imagem/openMenu.png" alt="menu"> </label>
+
+            <input type="checkbox" id="bt_menu">
+            <ul id="menu">
+                <li class="menu_item"><a href="../index.html">Início</a></li>
+                <li class="menu_item"><a href="comentarios.html">Comentários</a></li>
+                <li class="menu_item"><a href="metadados.html">Metadados</a></li>
+                <li class="menu_item">
+                    <p>Listas</p>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="layout.html">Layout</a></li>
+                <li class="menu_item"><a href="contato.html">Fale conosco</a></li>
+
+            </ul>
+        </nav>
+
+        <!--Caminho de como chegou esta página-->
+        <ul id="breadcrumb">
+            <li><a href="../index.html">Início</a></li>
+            <li>Acessibilidade</li>
+        </ul>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </header>
+    <!-- Conteúdo da página -->
+    <main id="main__content">
+        <h1 id="title">Acessibilidade</h1>
+
+        <section id="content">
+
+            <p class="content__text-acess">Este site foi desenvolvido para que pessoas com deficiência visual, baixa
+                visão, daltonismo, deficiência
+                auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de
+                fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+
+            <p class="content__text-acess">Para aumentar a fonte, é só clicar no símbolo de <b>A+</b> em nossa barra de
+                acessibilidade. Caso queira voltar
+                ao tamanho de fonte original, é só clicar em <b>A-</b>.</p>
+
+            <p class="content__text-acess">Se for necessário, você também pode usar o zoom nativo do seu navegador,
+                pressionando as teclas <b>“Ctrl”</b> e
+                <b>“+”</b> para aumentar todo o site e <b>“Ctrl”</b> e <b>“-“</b> para diminuir. Para voltar ao padrão,
+                pressione <b>“Ctrl”</b> e
+                <b>“0”</b>.
+            </p>
+
+            <p class="content__text-acess">Este site tem melhor acessibilidade quando acessado nas versões mais
+                atualizadas do seu navegador web.
+                Utilize sempre a versão mais recente de seu software.</p>
+
+            <br>
+
+            <p class="content__text-acess destaque">Teclas de atalho por navegadores</p>
+
+            <p class="content__text-acess small-destaque">Internet Explorer e Google Chrome:</p>
+
+            <p class="content__text-acess"><code><b>“Alt”</b> + <b>“1”</code> </b>- ir para o conteúdo</p>
+
+            <p class="content__text-acess"><code><b>“Alt”</b> + <b>“2” </b></code>- ir para o menu</p>
+
+            <p class="content__text-acess"><code><b>“Alt”</b> + <b>“3”</b></code> - ir para o rodapé</p>
+
+            <p class="content__text-acess  small-destaque">Firefox:</p>
+
+            <p class="content__text-acess"><code><b>“Alt”</b> + <b>“Shift”</b> + <b>“número”</b></code></p>
+
+            <p class="content__text-acess small-destaque">Opera:</p>
+
+            <p class="content__text-acess"><code><b>“Shift”</b> + <b>“Escape”</b> + <b>“número”</b></code></p>
+
+            <p class="content__text-acess small-destaque">Safari e OmniWeb:</p>
+
+            <p class="content__text-acess"><code><b>“Ctrl”</b> + <b>“número”</b></code></p>
+            <br>
+
+            <p class="content__text-acess destaque">Navegação por tabulação</p>
+
+
+            <p class="content__text-acess">Use a tecla <b>Tab</b> para navegar por elementos que recebem ação do usuário
+                no
+                site, tais como links, botões,
+                campos de formulário e outros na ordem em que eles são apresentados na página, e <b>Shift</b> +
+                <b>Tab</b> para
+                retornar. Use as <i>setas</i> <i>direcionais</i> para acessar as informações textuais.
+            </p>
+
+            <br>
+            <p class="content__text-acess destaque">Sugestões de programas disponíveis para pessoas com deficiência
+            </p>
+
+            <p class="content__text-acess small-destaque">- <b>Nitrous Voice Flux</b>: controla o computador por voz.
+                Gratuito;
+            </p>
+
+            <p class="content__text-acess  small-destaque">- <b>NVDA</b>: software livre para ler tela – vários idiomas
+                (Windows);</p>
+
+            <p class="content__text-acess small-destaque">- <b>YeoSoft</b> Text: leitor de tela em inglês e português;
+            </p>
+
+            <p class="content__text-acess small-destaque">- <b>Jaws for Windows</b>: leitor de tela – vários idiomas;
+            </p>
+
+            <p class="content__text-acess small-destaque">- <b>Virtual Vision</b>: leitor de telas em português do
+                Brasil;</p>
+
+            <p class="content__text-acess small-destaque">- <b>DOSVOX</b>: sistema para deficientes visuais (Windows ou
+                Linux).
+            </p>
+
+            <p class="content__text-acess small-destaque">- <b>Talckback</b>: leitor de tela disponível em smartphones
+                Android.
+            </p>
+
+            <p class="content__text-acess">Observação: leia no manual do leitor de telas sobre a melhor forma de
+                navegação em páginas web.</p>
+            <br>
+
+            <p class="content__text-acess destaque">LIBRAS - Língua Brasileira de Sinais</p>
+
+            <p class="content__text-acess">Este site é acessível em LIBRAS através do
+                <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.
+            </p>
+
+            <p class="content__text-acess">- Do lado direito de cada página do site existe o ícone de um Widget
+                informando que o site é acessível em
+                LIBRAS.</p>
+
+            <p class="content__text-acess">- Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja
+                traduzir.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer id="rodape">
+        <p>Desenvolvido por <a href="https://github.com/DiogoLCarvalho" target="_blank" class="social">Diogo Lima
+                Carvalho</a></p>
+        <p>Todos os direitos reservados &copy;2022</p>
+
+        <p id="validation">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS válido!" />
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- METADADOS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instruções sobre metadados, comentários, listas e layout em HTML">
+    <meta name="keywords" content="HTML, comentários, metadados, Lista não ordenada, Lista ordenada, layout">
+    <meta name="author" content="Diogo Lima Carvalho">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/imagem/cps.ico" type="image/x-icon">
+
+    <!-- Título do site -->
+    <title>Aula 11 - HTML</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de acessibilidade, no topo -->
+        <!-- div#acessibilidade>ul>li>a#main__content{Ir para o conteúdo da página}[href="#" acesskey=1 title="Ir para o conteúdo da página"] -->
+
+        <!-- accesskey = alt+"numero" = atalho no teclado-->
+
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li>
+                    <a href="#main__content" accesskey="1" title="Ir para o conteúdo da página">Ir para o conteúdo
+                        da página [1]</a>
+                </li>
+
+                <li>
+                    <a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a>
+                </li>
+
+                <li>
+                    <a href="#rodape" accesskey="3" title="Ir para o rodapé da página">Ir para o rodapé da página
+                        [3]</a>
+                </li>
+
+                <li id="pgacess">
+                    <a href="pages/acessibilidade.html">Acessibilidade</a>
+                </li>
+
+                <li class="contraste">
+                    <a href="javascript:void(0);" id="contraste">Contraste</a>
+                <li>
+
+                <li class="contraste">
+                    <a href="javascript:void(0);" id="sem-contraste">Sem Contraste</a>
+                </li>
+
+                <li class="fonte">
+                    <a href="javascript:void(0);" id="aumentar">A +</a>
+                </li>
+
+                <li class="fonte">
+                    <a href="javascript:void(0);" id="diminuir">A -</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <!-- logo da página -->
+        <a href="index.html" title="Ir para a página principal">
+            <img src="src/imagem/FATEC_ZONA_LESTE.png" alt="Logo da FATEC zona leste nas cores cinza e vermelho"
+                id="logo__fatec">
+        </a>
+
+
+        <!-- Menu de navegação -->
+        <nav>
+            <label for="bt_menu"><img src="src/imagem/openMenu.png" alt="menu"> </label>
+            <input type="checkbox" id="bt_menu">
+            <ul id="menu">
+                <li class="menu_item"><a href="index.html">Início</a></li>
+                <li class="menu_item"><a href="pages/comentarios.html">Comentários</a></li>
+                <li class="menu_item"><a href="pages/metadados.html">Metadados</a></li>
+                <li class="menu_item">
+                    <p>Listas</p>
+                    <ul>
+                        <li><a href="pages/lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="pages/lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="pages/layout.html">Layout</a></li>
+                <li class="menu_item"><a href="pages/contato.html">Fale conosco</a></li>
+
+            </ul>
+        </nav>        
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </header>
+    <!-- Conteúdo da página -->
+    <main id="main__content">
+        <h1 id="title">DESENVOLVIMENTO WEB 1</h1>
+
+        <section id="content">
+            <h2 id="sub__title">Assuntos Principais</h2>
+
+            <ol>
+                <li><a href="pages/comentarios.html" class="content__link">Comentários</a></li>
+                <li><a href="pages/metadados.html" class="content__link">Metadados</a></li>
+                <li><a href="pages/lista_ordenada.html" class="content__link">Listas Ordenada</a></li>
+                <li><a href="pages/lista_nao_ordenada.html" class="content__link">Listas não Ordenada</a></li>
+                <li><a href="pages/layout.html" class="content__link">Layout</a></li>
+                <li><a href="pages/contato.html" class="content__link">Fale Conosco</a></li>
+                <li><a href="pages/acessibilidade.html" class="content__link">Acessibilidade</a></li>
+            </ol>
+
+
+            <h2 class="sub__title" style="margin-top: 20px;">Apresentando...</h2>
+
+            <video controls poster="src/imagem/img-video.jpg">
+                <source src="src/video/video.mp4" type="audio/mp4">
+                Não é possivel reproduzir o vídeo
+            </video>
+
+            <audio controls>
+                <source src="src/audio/01 The Miracle (Of Joey Ramone).mp3 The Miracle (Of Joey Ramone).mp3" type="audio/mp3">
+                Não é possivel reproduzir o áudio
+            </audio>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer id="rodape">
+        <p>Desenvolvido por <a href="https://github.com/DiogoLCarvalho" target="_blank" class="social">Diogo Lima
+                Carvalho</a></p>
+        <p>Todos os direitos reservados &copy;2022</p>
+
+
+        <p id="validation">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS válido!" />
+            </a>
+        </p>
+
+
+    </footer>
+
+</body>
+
+
+</html>
