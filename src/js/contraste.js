@@ -4,7 +4,7 @@
 var link_css = "../src/css/style.css";
 
 if (getCookie2() == "contraste") {
-    link_css = "../src/css/contrastre.css"; // se o valor do cookie capturado pela function getCookie2 for contraste, a variável link_css recebe como valor a folha de estilo contraste.css
+    link_css = "../src/css/contraste.css"; // se o valor do cookie capturado pela function getCookie2 for contraste, a variável link_css recebe como valor a folha de estilo contraste.css
 } else if (getCookie() == "default") {
     link_css = "../src/css/style.css";
 }

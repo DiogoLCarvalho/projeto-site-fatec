@@ -6,17 +6,15 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #000;
 }
-#img-100{
-    width: 100%;
-}
+
 
 /* Acessibilidade */
 #acessibilidade{
     width: 100%;
     height: auto;
-    background-color: #fff;
+    background-color: #000;
     font-size: 1em;
     margin: auto;
 }
@@ -31,12 +29,12 @@ body {
     display: inline;
 }
 #atalhos li a{
-    color: black;
+    color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
 }
 #atalhos li a:hover{
-    color: #e22e3d;
+    color: #fff;
 }
 
 #pgacess{
@@ -51,6 +49,8 @@ body {
 #content >p.content__text-acess{
     font-size: 16px;
     text-align: justify;
+    color: white;
+
 }
 #content >p.content__text-acess+p.content__text-acess,#content >p.content__text-acess:first-child{
     margin-bottom: 10px;
@@ -65,9 +65,12 @@ body {
     font-style: italic;
     margin: 15px 0px 15px 0px;
 }
+.content__text-acess a{
+    color: yellow;
+}
 code{
     font-family: Consolas,"courier new";
-    color: #e22e3d;
+    color: black;
     background-color: #f1f1f1;
     padding: 2px;
     font-size: 105%;
@@ -78,7 +81,7 @@ code{
 #breadcrumb{
     padding-left: 2%;
     list-style: none;
-    background-color: #A60A17;
+    background-color: #000;
 }
 #breadcrumb li{
     display: inline;
@@ -122,7 +125,7 @@ audio{
 
 #main__content {
     margin-top: 50px;
-    background-color: white;
+    background-color: #161515;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -132,6 +135,7 @@ audio{
     margin-left: auto;
     margin-right: auto;
     transition: .5s ease-in-out;
+    filter: invert();
 }
 #logo__fatec:hover{
     transform: scale(1.05);
@@ -140,9 +144,14 @@ audio{
     text-align: center;
     font-size: 2.5em;
     padding: 20px;
+    color: white;
 }
 #sub__title{
     margin-bottom: 20px;
+    color: white;
+}
+#content-left .sub__title{
+    color: white;
 }
 #sub__title,
 .sub__title {
@@ -171,7 +180,7 @@ audio{
 
 footer {
     width: 100%;
-    background-color: #e22e3d;
+    background-color: #000;
     padding: 50px;
     color: white;
     text-align: center;
@@ -181,6 +190,8 @@ footer {
 .text__content {
     font-size: 18px;
     line-height: 30px;
+    color: white;
+
 }
 
 #img__example {
@@ -234,7 +245,7 @@ footer {
 /* Menu Site */
 nav{
     width: 100%;
-    background: #e22e3d;
+    background: #161515;
     height: auto;
 }
 ul{
@@ -256,7 +267,7 @@ ul{
     position: absolute;
     top: 48px;
     left: 0; 
-    background-color: #e22e3d;
+    background-color: #161515;
     list-style: none;
     display: none;
     border-radius: 0px 0px 10px 10px;
@@ -266,7 +277,7 @@ ul{
     margin-top: 5px;
 }
 #menu li ul li:hover a{
-    color: black;
+    color: white;
 }
 
 #menu li:hover ul{
@@ -274,7 +285,7 @@ ul{
 }
 
 #menu .menu_item{
-    color: white;
+    color: black;
     position: relative;
     cursor: pointer;
     height: 100%;
@@ -287,18 +298,19 @@ ul{
 li p{
     position: relative;
     top: 0px;
+    color: yellow;
 }
 
 #menu .menu_item a{
     position: relative;
     top: 0px;
-    color: white;
+    color: yellow;
     text-decoration: none;
     padding: 5px 10px;
     transition: all .5s ease-in-out;
 }
 #menu .menu_item:hover{
-    background-color: #A60A17;
+    background-color: #000;
 }
 
 #menu li+li{
@@ -307,6 +319,7 @@ li p{
 
 .content__link{
     text-decoration: none;
+    color: yellow;
 }
 .content__link:hover{
     text-decoration: underline ;
@@ -324,7 +337,7 @@ fieldset{
     display: block;
     margin: 0 auto;
     border-radius: 20px;
-    border: 3px solid #A60A17;
+    border: 3px solid white;
     box-shadow: 1px 2px 5px #00000070;
 }
 
@@ -335,11 +348,12 @@ fieldset + fieldset{
 legend{
     margin-bottom: 10px;
     font-weight: bold;
+    color: white;
     font-style: italic;
 }
 
 input,textarea{
-    outline-color: #e22e3d;
+    outline-color: white;
 }
 input,select{
     width: 100%;
@@ -355,8 +369,8 @@ select{
     height: max-content;
     padding: 18px 19px;
     border: none;
-    color: white;
-    background-color: #e22e3d; 
+    color: black;
+    background-color: white; 
     border: 1px solid black;
 }
 
@@ -374,16 +388,18 @@ textarea{
 
 label{
     letter-spacing: 2.5px;
+    color: white;
 }
 
 /* Required class label */
 label.required{
     font-weight: bold;
+    color: white;
 }
 
 label.required::after{
     content: " *";
-    color: #e22e3d;
+    color:yellow;
 }   
 
 /* botões */
@@ -398,8 +414,8 @@ label.required::after{
 #send,#clear{
     width: 120px;
     height: 50px;
-    background-color: #e22e3d;
-    color: white;
+    background-color: black;
+    color: yellow;
     border-radius:5px;
     cursor: pointer;
     border: 2px solid rgb(78, 76, 76);
@@ -412,15 +428,16 @@ label.required::after{
 }
 
 #send:hover,#clear:hover{
-    background-color: rgb(194, 37, 50);
+    background-color: white;
+    color: black;
 }
 
 #send:focus,#clear:focus{
-    border: 2px solid #e22e3d;
+    border: 2px solid white;
 }
 .social{
     text-decoration: none;
-    color: black;
+    color: yellow;
 }
 .social:hover{
     text-decoration: underline;
@@ -481,7 +498,7 @@ label[for="bt_menu"],#bt_menu{
         text-align: center;
         padding: 10px 0px ;
         width: 100%;
-        background-color: #e22e3d;
+        background-color: #000;
         display: block;
         float: left;
     }
@@ -490,7 +507,7 @@ label[for="bt_menu"],#bt_menu{
         display: block;
     }
     #menu li{
-        background: #e22e3d;
+        background: #000;
         position: relative;
         float: left;
         width: 100%;
@@ -502,7 +519,7 @@ label[for="bt_menu"],#bt_menu{
         left: 10px;
     }
     #menu li ul{
-        background: #e22e3d;
+        background: #000;
         height: auto;
     }
     #menu li ul{
@@ -514,7 +531,7 @@ label[for="bt_menu"],#bt_menu{
         width: 100%;
         float: left;
         display: block;
-        background-color: #A60A17;
+        background-color: #000;
     }
     #logo__fatec{
         width: 180px;
